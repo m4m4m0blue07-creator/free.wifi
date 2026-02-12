@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Access Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <!-- Logo -->
+    <div style="text-align:center;">
+        <img src="logo.png" alt="WiFi Logo" style="width:120px; margin-bottom:15px;">
+    </div>
+
+    <h2>WiFi Access Portal</h2>
+    <p class="timer">Time Left: <span id="time">30</span>s</p>
+
+    <p>1. What does CPU stand for?</p>
+    <input type="radio" name="q1" value="a"> Central Processing Unit<br>
+    <input type="radio" name="q1" value="b"> Central Power Unit<br><br>
+
+    <p>2. What is the brain of the computer?</p>
+    <input type="radio" name="q2" value="a"> Monitor<br>
+    <input type="radio" name="q2" value="b"> CPU<br><br>
+
+    <button onclick="checkQuiz()" id="submitBtn">Get WiFi Access</button>
+    <button onclick="restartQuiz()" id="restartBtn" style="display:none; margin-top:10px;">Try Again</button>
+
+    <div id="result" class="code"></div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
